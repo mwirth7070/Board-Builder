@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - Board Builder</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <head>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+</head> 
+
+<body onload="game();"> 
+
+  <div id="content" style="position:relative; width:408px; height:120px">
+
+    <h3>Hack React Board Builder Tool</h3>
+ <b>Instructions:</b> Use the mouse to select/deselect the tiles you would like to use in the <i>"Hack React"</i> game.  Once you have the design finalized click the "Export Grid" button for the coordinates to copy/paste into the program.
+<P>
+<input type="button" value="&#xf00d Remove All" onclick="destroyBricks()"/> 
+
+<input type="button" value="&#xf021 Reset All" onclick="setupBricks()"/>  
+<P>
+<canvas id="gameCanvas"
+style="z-index: 1; border:3px solid #000000;
+position:relative;
+left:0px;
+top:0px;
+" height="119px" width="408" >
+This text is displayed if your browser does not support HTML5 Canvas.
+</canvas>     
+
+<P>   
+
+<input type="button" value="&#xf04b Export Grid" onclick="tileLayout()"/><br>
+
+  <a id="tL"></a> 
+
+    </div>
+
+</html>
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
